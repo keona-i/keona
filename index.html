@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Mata Daten -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0"> 
+        <link href="/javaScript/javaScript.js">
+       
+       <link rel="preconnect" href="https://fonts.gstatic.com"> 
+       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <title>Keona Ihli</title>
+
+        <!-- CSS -->
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+            
+            body{
+                background: #F6F6F6;
+                font-family: 'Oswald';
+                overflow-y: scroll;
+            }
+             header{
+                padding: 40px 150px;
+                max-width:1140px;
+                
+                
+                
+            }
+            header .name{
+                float: left;
+                font-family: 'Oswald';
+                font-size: 18px;
+                
+            }
+            header .name ul li{
+                display: inline-flex;
+                margin-left:  0px;  
+            }
+            header .name ul li a{
+                color: rgb(20, 20, 20);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all ease 0.5s;
+                
+            }
+            header .name ul li a:hover{
+                color: rgb(159, 191, 228);
+                
+            }
+            header .menu{
+                float: right;
+                font-size: 18px;
+            }
+            header .menu ul li{
+                display: inline-block;
+                margin-right:  40px;
+            }
+            header .menu ul li:last-child{
+                margin-right: 11px;
+                font-size: 18px;
+            }
+            header .menu .btn{
+                margin-right: 1px;
+                text-decoration: underline;
+            }
+            header .menu .btn1{
+                margin-right: 1px;
+            }
+            header .menu ul li a{
+                color: rgb(20, 20, 20);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all ease 0.5s;
+            }
+            header .menu ul li a:hover{
+                color: rgb(159, 191, 228);
+                
+            }
+           .logo{
+            display: inline-flex;
+                position: fixed;
+                
+                margin-left:  -105px;  
+                margin-top: -20px;    
+           }
+
+           .wrapper{
+               padding: 40px 150px;
+               max-width:1140px;
+                
+             
+           }
+           .p4{
+               margin: 0px 0px;
+               margin-top: 150px;
+              
+           }
+           .overlay{
+                margin: 0px 0px;
+                margin-top: -405px;
+                width:400px; 
+                height:400px;
+                position: absolute;
+                text-align: center;
+                text-decoration: #f6f6f600;
+                text-transform: uppercase;
+                font-family: 'Oswald';
+                color: #f6f6f600;
+                transition: all ease 0.5s;
+                cursor: pointer;
+           }
+           .overlay:hover{
+                background-color: rgba(135, 153, 151, 0.637);
+                opacity: 1;
+                color: rgb(255, 255, 255);
+                font-size: 40px;  
+           }
+          
+           .p3{
+            margin-left: 590px;
+            margin-top: -250px;
+            max-width:1140px;
+            padding: 40px 150px;
+           }
+           
+           .overlay1{
+                margin: 0px 0px;
+              
+                margin-left: 740px;
+                margin-top: -445px;
+                width:400px; 
+                height:400px;
+                position: absolute;
+                text-align: center;
+                text-decoration: #f6f6f600;
+                text-transform: uppercase;
+                font-family: 'Oswald';
+                color: #f6f6f600;
+                transition: all ease 0.5s;
+                cursor: pointer;
+                
+           }
+           .overlay1:hover{
+                background-color: rgba(222, 224, 211, 0.9);
+                opacity: 1;
+                color: rgb(255, 255, 255);
+                font-size: 40px;  
+           }
+
+           .p2{
+            max-width:1140px;
+            margin: 0px 0px;
+            margin-top: -50px;
+            margin-right: -420px;
+           }
+
+           .overlay2{
+                margin: 0px 0px;
+              
+                margin-right: 740px;
+                margin-top: -405px;
+                width:400px; 
+                height:400px;
+                position: absolute;
+                text-align: center;
+                text-decoration: #f6f6f600;
+                text-transform: uppercase;
+                font-family: 'Oswald';
+                color: #f6f6f600;
+                transition: all ease 0.5s;
+                cursor: pointer;
+           }
+           .overlay2:hover{
+                background-color: rgba(211, 202, 188, 0.7);
+                opacity: 1;
+                color: rgb(255, 255, 255);
+                font-size: 40px;  
+           }
+
+           .p1{
+                margin-left: 590px;
+                margin-top: -250px;
+                max-width:1140px;
+                padding: 40px 150px;
+           }
+
+           .overlay3{
+                margin: 0px 0px;
+                margin-left: 740px;
+                margin-top: -445px;
+                width:400px; 
+                height:400px;
+                position: absolute;
+                text-align: center;
+                text-decoration: #f6f6f600;
+                text-transform: uppercase;
+                font-family: 'Oswald';
+                color: #f6f6f600;
+                transition: all ease 0.5s;
+                cursor: pointer;
+           }
+           .overlay3:hover{
+                background-color: rgba(217, 225, 219, 0.8);
+                opacity: 1;
+                color: rgb(255, 255, 255);
+                font-size: 40px;  
+           }
+        
+           .icon{
+               padding: 40px 150px;
+               max-width:1140px;
+               margin-top: -1310px;
+               margin-left: 1100px;
+           }
+           .kreis{
+                
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                max-width:1140px;
+                margin-top: -30px;
+                margin-left: 1242px;
+                animation-name: test;
+                animation-duration: 5s;
+                animation-iteration-count:infinite;
+           }
+           @keyframes test {
+                0%{background-color: rgb(203, 216, 220,0.2);}
+                50%{background-color: rgb(203, 216, 220);}
+               100%{background-color: rgb(203, 216, 220,0.2);}
+               
+               
+           }
+           
+           .text{
+               margin-left: 1130px;
+               margin-top: -97px;
+               font-family: 'Oswald';
+               text-transform: uppercase;
+               font-size: 25px;
+               color: rgb(20, 20, 20);
+           }
+           
+        </style>
+
+    </head>
+    <body>
+        
+            <!--Header-->
+            <header>
+                <div class="logo">
+                    <img id="reload" src="Logo.png" alt="scroll" width="65" height="65"></img>
+                    </div>
+
+                <div class="name">
+                    <ul>
+                        <li onclick="location.href='index.html';"><a href="#">Keona Ihli</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li onclick="location.href='about.html';"><a href="#">About Me</a></li>
+                        <li class="btn"><a href="#">DE</a></li>
+                        <li class="btn1"><p>/</p></li>
+                        <li class="btn2" onclick="location.href='index_en.html'"><a href="#">EN</a></li>
+                    </ul>
+                </div>    
+            </header> 
+
+           
+
+            
+            <div class="wrapper">
+
+                    <div class="p4">
+                        <img src="Projekt4.png" width="400" height="400"></a>
+                    </div>
+                       <div class ="overlay" onclick="location.href='Kub.html'">3.Semester <p>Prototyping</p></div>
+
+                    <div class="p3">
+                        <img src="Projekt3.png" width="400" height="400">
+                    </div>
+                        <div class="overlay1" onclick="location.href='Educator.html'">3.Semester<p>Design Methoden  <p>& User Research</p></p></div>
+
+                    <div class="p2">
+                        <img src="Projekt2.png" width="400" height="400">
+                    </div>
+                        <div class="overlay2" onclick="location.href='Viergewinnt.html'">2.Semester<p>Fullstack</p></div>
+
+                    <div class="p1">
+                        <img src="Projekt1.png" width="400" height="400">
+                    </div>
+                        <div class="overlay3" onclick="location.href='UserJourney.html'">1.Semester<p>Design Grundlagen</p></div>
+            </div>
+
+
+            <div class="icon">
+                <img  id="sping" src="icon.png" alt="" wight="40" height="40">
+            </div>
+            
+            <div class="text"> 
+                <a>Projekte</a>
+            </div>
+             <div class="kreis"></div>
+
+
+
+    </body>
+    <script src="javaScript.js"></script>
+</html>

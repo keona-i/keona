@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Mata Daten -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0"> 
+        <link href="/javaScript/javaScript.js">
+       
+       <link rel="preconnect" href="https://fonts.gstatic.com"> 
+       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <title>Keona Ihli - Projekt User Journey</title>
+
+        <!-- CSS -->
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+            
+            body{
+                background: #F6F6F6;
+                font-family: 'Oswald';
+                overflow-y: scroll;
+            }
+             header{
+                padding: 40px 150px;
+                max-width:1140px;
+                
+                
+                
+            }
+            header .name{
+                float: left;
+                font-family: 'Oswald';
+                font-size: 18px;
+                
+            }
+            header .name ul li{
+                display: inline-flex;
+                margin-left:  0px;  
+            }
+            header .name ul li a{
+                color: rgb(20, 20, 20);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all ease 0.5s;
+                
+            }
+            header .name ul li a:hover{
+                color: rgb(159, 191, 228);
+                
+            }
+            header .menu{
+                float: right;
+                font-size: 18px;
+            }
+            header .menu ul li{
+                display: inline-block;
+                margin-right:  40px;
+            }
+            header .menu ul li:last-child{
+                margin-right: 11px;
+                font-size: 18px;
+                text-decoration: underline;
+            }
+            header .menu .btn{
+                margin-right: 1px;
+                
+            }
+            header .menu .btn1{
+                margin-right: 1px;
+            }
+
+
+            header .menu ul li a{
+                color: rgb(20, 20, 20);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all ease 0.5s;
+            }
+            header .menu ul li a:hover{
+                color: rgb(159, 191, 228);
+                
+            }
+           .logo{
+            display: inline-flex;
+                position: fixed;
+                
+                margin-left:  -105px;  
+                margin-top: -20px;    
+           }
+
+           .wrapper{
+               padding: 40px 150px;
+               max-width:1140px; 
+           }
+           
+
+           .p1{
+                margin-left: 590px;
+                margin-top: 150px;
+                max-width:1140px;
+                padding: 40px 150px;
+           }
+           .Headline {
+                font-weight: 200;
+                margin-top: -45px;
+                margin-right: 50px;
+                margin-left: 895px;
+                font-size: 19px;
+                min-width:640px;                  
+           }
+          
+           
+           .infotext{
+                padding: 40px 150px;
+                min-width:640px; 
+                margin-top: -500px;
+                margin-left: 0px;
+                margin-right: 110%;
+                font-family: 'Oswald';
+                font-size: 17px;
+                font-weight: 300;
+                color: rgb(20, 20, 20); 
+                text-align: justify;
+                float: left;
+                position: absolute;
+           }
+            .infotext p{
+                margin-top: 20px;
+                margin-bottom: 20px;
+           }
+
+           .end{
+                padding: 40px 150px;
+                min-width: 640px;
+                margin-top: 1400px;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        
+            <!--Header-->
+            <header>
+                <div class="logo">
+                    <img id="reload" src="Logo.png" alt="scroll" width="65" height="65"></img>
+                    </div>
+
+                <div class="name">
+                    <ul>
+                        <li onclick="location.href='index.html';"><a href="#">Keona Ihli</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li onclick="location.href='about.html';"><a href="#">About Me</a></li>
+                        <li class="btn"onclick="location.href='UserJourney.html'"><a href="#">DE</a></li>
+                        <li class="btn1"><a href="#">/</a></li>
+                        <li class="btn2"><a href="#">EN</a></li>
+                    </ul>
+                </div>    
+            </header> 
+
+           
+
+            
+            <div class="wrapper">
+
+                    <div class="p1">
+                        <img src="Projekt1.png" width="400" height="400">
+                    </div>
+            </div>
+
+            <div class="Headline">
+                1. Semester - Design Grundlagen                
+            </div>
+
+           
+
+            <article class="infotext" >
+                <h3> Interaction Map</h3> 
+                <p></p>
+                The challenge was to find a proband, which as the task to do a interaction with a product.
+                The proband in this case has the funktion of a first user of the product. 
+                We had the funktion to observe the proband and the interaction, with monitor, to note down and film.
+                The result of the testing, should we register in a interaction map.
+
+                I let my proband test the park-assistent with the half automatic parking function from Ford.
+                Per button press the Active park assist (in- and out parking function) with ultrasonic 
+                sensors helps identify a suitable parking space. Once you shift into reverse and take the hands off the wheel, the 
+                system will steer the car vehicle into the space. While the driver control the accelerator and brakes.
+                <br></br>
+                <br></br>
+                <h3> Scenario </h3>
+                <p></p>
+                <b>Starting situation:</b>
+                <p></p>
+                You sit in your car and drives to your final destination. Here arrived you noticed that almost all parking spaces are taken.
+                But one parking space is free!
+                <p></p>
+                <img src="u-b1.png" width="500" height="300">
+                <p></p>
+                <b>The Goal:</b>
+                <p></p>
+                <img src="u-b2.png" width="500" height="300">
+                <br></br>
+                <br></br>
+                <h3>Progress</h3>
+                <p></p>
+                As already mentioned I let my proband test, my role was the observer. The proband should speak one's mind aloud.
+                To document everything and afterwards every step to relate to the interaction, I filmed and interviewed the proband in the end.
+                <p></p>
+                The next step was to get the first drafts on paper, these turn in to digital concepts. 
+                <p></p>
+                <img src="u-b3.jpg" width="500" height="300">
+                <br></br>
+                <br></br>
+                <h3>End result</h3>
+                <p></p>
+            </article>
+
+            <div class="end">
+                <img src="u-b4.png" width="1200" height="650">
+
+            </div>
+
+
+         
+
+
+
+    </body>
+    <script src="javaScript.js"></script>
+</html>

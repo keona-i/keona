@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Mata Daten -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0"> 
+        <link href="/javaScript/javaScript.js">
+       
+       <link rel="preconnect" href="https://fonts.gstatic.com"> 
+       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <title>Keona Ihli</title>
+
+        <!-- CSS -->
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+            
+            body{
+                background: #F6F6F6;
+                font-family: 'Oswald';
+                overflow-y: scroll;
+            }
+             header{
+                padding: 40px 150px;
+                max-width:1140px;
+                
+            }
+            header .name{
+                float: left;
+                font-family: 'Oswald';
+                font-size: 18px;
+                
+            }
+            header .name ul li{
+                display: inline-flex;
+                margin-left:  0px;  
+            }
+            header .name ul li a{
+                color: rgb(20, 20, 20);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all ease 0.5s;
+                
+            }
+            header .name ul li a:hover{
+                color: rgb(159, 191, 228);
+                
+            }
+            header .menu{
+                float: right;
+                font-size: 18px;
+                
+            }
+            header .menu ul li{
+                display: inline-block;
+                margin-right:  40px;
+            }
+            header .menu ul li:last-child{
+                margin-right: 11px;
+                font-size: 18px;
+            }
+            header .menu .btn{
+                margin-right: 1px;
+                text-decoration: underline;
+            }
+            header .menu .btn1{
+                margin-right: 1px;
+            }
+
+            header .menu ul li a{
+                color: rgb(20, 20, 20);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all ease 0.5s;
+            }
+            header .menu ul li a:hover{
+                color: rgb(159, 191, 228);
+                
+            }
+           .logo{
+            display: inline-flex;
+                position: fixed;
+                
+                margin-left:  -105px;  
+                margin-top: -20px;    
+           }
+           .bild{
+                padding: 40px 150px;
+                max-width:1140px;
+                margin-top: 150px;
+           }
+           .headline{
+            
+            padding: 40px 150px;
+            max-width: 640px; 
+            margin-top: -450px;
+            margin-left: 520px;
+            margin-right: 150px;
+            font-family: 'Oswald';
+            font-size: 40px;
+            font-weight: 500;
+            color: rgb(20, 20, 20); 
+            text-align: justify;
+            float: right;
+            position: absolute;
+
+           }
+           .aboutText{
+            padding: 40px 150px;
+            max-width: 640px; 
+            margin-top: -380px;
+            margin-left: 520px;
+            margin-right: 150px;
+            font-family: 'Oswald';
+            font-size: 20px;
+            font-weight: 200;
+            color: rgb(20, 20, 20); 
+            text-align: justify;
+            float: right;
+            position: absolute;
+           }
+           .aboutText p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+           }
+
+
+        </style>
+
+    </head>
+    <body>
+        
+            <!--Header-->
+            <header>
+                <div class="logo">
+                    <img id="reload" src="Logo.png" alt="scroll" width="65" height="65"></img>
+                    </div>
+
+                <div class="name">
+                    <ul>
+                        <li onclick="location.href='index.html';"><a href="#">Keona Ihli</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li onclick="location.href='';"><a href="#">About Me</a></li>
+                        <li class="btn"><a href="#">DE</a></li>
+                        <li class="btn1"><a href="#">/</a></li>
+                        <li class="btn2" onclick="location.href='about_en.html'"><a href="#">EN</a></li>
+                    </ul>
+                </div>    
+            </header> 
+
+            <div class="bild">
+                <img src="a-bild1.jpg" width="400" height="400">
+            </div>
+
+            <div class="headline">
+                Hi
+            </div>
+
+            <article class="aboutText">
+                Ich heiße Keona. Studiere Internet der Dinge im 4. Semester, an der Hochschule für Gestaltung in Schwäbisch Gmünd.
+                Ich spreche Deutsch, Niederländisch und Englisch.
+                <p></p>
+                Im IoT-Studium könnte ich das Nutzerzentriertes gestalten für mich dazugewinnen und binde diese in Projekten und Prototypen ein.
+                Ich würde mich freuen, das was ich bis jetzt erlernte habe im Studium, in die Praxis umsetzten zukönnen.
+                <p></p>
+                kontakiert mich über: 
+                <a href="mailto:keona.ihli@hfg-gmuend.com">keona.ihli@hfg-gmuend.de</a>
+            </article>
+            
+           
+
+           
+
+           
+
+    </body>
+    <script src="javaScript.js"></script>
+</html>

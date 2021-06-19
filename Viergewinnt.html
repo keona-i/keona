@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Mata Daten -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0"> 
+        <link href="/javaScript/javaScript.js">
+       
+       <link rel="preconnect" href="https://fonts.gstatic.com"> 
+       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <title>Keona Ihli - Projekt Viergewinnt</title>
+
+        <!-- CSS -->
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+            
+            body{
+                background: #F6F6F6;
+                font-family: 'Oswald';
+                overflow-y: scroll;
+            }
+             header{
+                padding: 40px 150px;
+                max-width:1140px;
+                
+                
+                
+                
+            }
+            header .name{
+                float: left;
+                font-family: 'Oswald';
+                font-size: 18px;
+                
+            }
+            header .name ul li{
+                display: inline-flex;
+                margin-left:  0px;  
+            }
+            header .name ul li a{
+                color: rgb(20, 20, 20);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all ease 0.5s;
+                
+            }
+            header .name ul li a:hover{
+                color: rgb(159, 191, 228);
+                
+            }
+            header .menu{
+                float: right;
+                font-size: 18px;
+            }
+            header .menu ul li{
+                display: inline-block;
+                margin-right:  40px;
+            }
+            header .menu ul li:last-child{
+                margin-right: 11px;
+                font-size: 18px;
+            }
+            header .menu .btn{
+                margin-right: 1px;
+                text-decoration: underline;
+            }
+            header .menu .btn1{
+                margin-right: 1px;
+            }
+            header .menu ul li a{
+                color: rgb(20, 20, 20);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all ease 0.5s;
+            }
+            header .menu ul li a:hover{
+                color: rgb(159, 191, 228);
+                
+            }
+           .logo{
+                display: inline-flex;
+                position: fixed;
+                
+                margin-left:  -105px;  
+                margin-top: -20px;    
+           }
+
+           .wrapper{
+                padding: 40px 150px;
+                max-width:1140px;  
+           }
+           .p4{
+                margin: 0px 0px;
+                margin-top: 150px;
+                
+           }
+
+           .Headline {
+                font-weight: 200;
+                margin-top: -10px;
+                margin-left: 150px;
+                font-size: 19px;
+                max-width:1140px; 
+                           
+           }
+           .Headline p{
+                margin-top: 10px;
+                margin-bottom: 10px;
+           }
+           
+           
+           .infotext{
+                padding: 40px 150px;
+                min-width:620px;
+                max-width: 640px;
+                margin-top: -525px;
+                margin-left: 520px;
+                margin-right: 150px;
+                font-family: 'Oswald';
+                font-size: 17px;
+                font-weight: 300;
+                color: rgb(20, 20, 20); 
+                text-align: justify;
+                float: right;
+                position: absolute;
+           }
+            .infotext p{
+                margin-top: 20px;
+                margin-bottom: 20px;
+           }
+          
+           
+          
+               
+           
+          
+           
+           
+        </style>
+
+    </head>
+    <body>
+        
+            <!--Header-->
+            <header>
+                <div class="logo">
+                    <img id="reload" src="Logo.png" alt="scroll" width="65" height="65"></img>
+                    </div>
+
+                <div class="name">
+                    <ul>
+                        <li onclick="location.href='index.html';"><a href="#">Keona Ihli</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li onclick="location.href='about.html';"><a href="#">About Me</a></li>
+                        <li class="btn"><a href="#">DE</a></li>
+                        <li class="btn1"><a href="#">/</a></li>
+                        <li class="btn2"onclick="location.href='Kub_en.html'"><a href="#">EN</a></li>
+                    </ul>
+                </div>    
+            </header> 
+           
+            <div class="wrapper">
+
+                    <div class="p4">
+                        <img src="Projekt2.png" width="400" height="400">
+                    </div>      
+            </div>
+
+            <div class="Headline">
+                2. Semester - Full Stack Development
+                
+            </div>
+           
+          
+
+            <article class="infotext" >
+                <h3> Ein Spiel, um Full Stack zu verstehen</h3>
+                <p></p>
+                Die Aufgabe bestand darin ein Full Stack - Projekt zu coden. Das Backend sollte mit den Frontend 
+                verbunden werden, dabei musste mindestes ein LED-Streifen eingebettet werden. Als Projekt wählte 
+                ich das Spiel Vier Gewinnt. 
+                <br></br>
+                <br></br>
+                <h3>Prototyping</h3>
+                <p></p>
+                Der Arduino Uno wird mit Javascript betrieben und steuert so die LED's. Im Code wurden die einzelne 
+                Pixel mit drei faktoren 0,1,2 festgelegt, dass bedeutet die Pixel kann frei sein oder mit dem Chip vom Spieler 1 
+                besetzt oder es wird mit dem Chip vom Spieler 2 besetzt. Wird im Interface ein Button angeklickt von den jeweiligen Spielern, fällt der 
+                Chip in form der LED runter. Druch die Funktion drop und applyGravit wird so die Schwerkraft simuliert, damit sieht es aus wie im echten Spiel.
+                Die zwei Spielern haben unterschiedliche Farben Spieler 1 hat die farbe Rot & Spieler 2 hat die farbe Grün. Mit dem Reset-Button können das Spiel, 
+                wieder von vorne angefangen werden.
+                <p></p>
+                <p></p>
+                <br></br>
+                <br></br>
+                <h3>Full Stack</h3>
+                <p></p>
+                Im Frontend wurde mit VUE & Bootstrap gearbeitet, um schnell und ohne viel CSS Kenntnisse das Interface zu gestalten.
+                Das Frontend ist mit dem Backend verbunden, durch Socket ist es überhaupt möglich das Interface anzuklicken & so ändert sich die LED Spielfläche.
+                Das bedeutet das im socket-io die Daten in Echtzeit übertragen werden, also die Kommunikation zwischen Interface und Server.
+                Im Backend wurde die Funktionen in JavaScript geschrieben, das wiederum ist mit dem Arduino Uno verbunden, wo auch die LED angepint sind.
+                <p></p>
+                <img src="v-b1.png" width="600" height="400">
+                <p></p>
+                <br></br>
+                <br></br>
+                <h3>Interface</h3>
+                <p></p>
+                Das Interface kann auf Website aufgerufen werden oder auch am Smartphone mit einen QR-Code.
+                <p></p>
+                <video controls width="600" height="400">
+                    <source src="v-b2.mp4" type="video/mp4"> 
+                    <a href="#">Link-Addresse</a> abrufen.
+                  </video>
+                <p></p>
+
+            </article>
+
+    </body>
+    <script src="javaScript.js"></script>
+</html>

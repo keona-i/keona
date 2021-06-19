@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Mata Daten -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0"> 
+        <link href="/javaScript/javaScript.js">
+       
+       <link rel="preconnect" href="https://fonts.gstatic.com"> 
+       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <title>Keona Ihli - Project KUB</title>
+
+        <!-- CSS -->
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+            
+            body{
+                background: #F6F6F6;
+                font-family: 'Oswald';
+                overflow-y: scroll;
+            }
+             header{
+                padding: 40px 150px;
+                max-width:1140px;   
+            }
+            header .name{
+                float: left;
+                font-family: 'Oswald';
+                font-size: 18px;
+                
+            }
+            header .name ul li{
+                display: inline-flex;
+                margin-left:  0px;  
+            }
+            header .name ul li a{
+                color: rgb(20, 20, 20);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all ease 0.5s; 
+            }
+            header .name ul li a:hover{
+                color: rgb(159, 191, 228);
+                
+            }
+            header .menu{
+                float: right;
+                font-size: 18px;
+            }
+            header .menu ul li{
+                display: inline-block;
+                margin-right:  40px;
+            }
+            header .menu ul li:last-child{
+                margin-right: 11px;
+                font-size: 18px;
+                text-decoration: underline;
+            }
+            header .menu .btn{
+                margin-right: 1px;
+                
+            }
+            header .menu .btn1{
+                margin-right: 1px;
+            }
+            header .menu ul li a{
+                color: rgb(20, 20, 20);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all ease 0.5s;
+            }
+            header .menu ul li a:hover{
+                color: rgb(159, 191, 228);
+                
+            }
+           .logo{
+                display: inline-flex;
+                position: fixed;
+                
+                margin-left:  -105px;  
+                margin-top: -20px;    
+           }
+
+           .wrapper{
+               padding: 40px 150px;
+               max-width:1140px;  
+           }
+           .p4{
+               margin: 0px 0px;
+               margin-top: 150px;   
+           }
+           .Headline {
+                font-weight: 200;
+                margin-top: -10px;
+                margin-left: 150px;
+                font-size: 19px;
+                max-width:1140px;                
+           }
+           .Headline p{
+                margin-top: 10px;
+                margin-bottom: 10px;
+           }
+           
+           
+           .infotext{
+                padding: 40px 150px;
+                max-width:640px; 
+                margin-top: -525px;
+                margin-left: 520px;
+                margin-right: 150px;
+                font-family: 'Oswald';
+                font-size: 17px;
+                font-weight: 300;
+                color: rgb(20, 20, 20); 
+                text-align: justify;
+                float: right;
+                position: absolute;
+           }
+            .infotext p{
+                margin-top: 20px;
+                margin-bottom: 20px;
+           }
+           .b1{
+                margin-left: 120px;
+                margin-top: 150px; 
+           }
+           .b2{
+                margin-left: 20px;
+           }
+ 
+           
+           .end{
+               padding: 40px 150px;
+               max-width:1140px;
+               margin-left: 0px;
+               margin-top: 750px;
+               margin-right: 10px;
+           }
+ 
+        </style>
+
+    </head>
+    <body>
+        
+            <!--Header-->
+            <header>
+                <div class="logo">
+                    <img id="reload" src="Logo.png" alt="scroll" width="65" height="65"></img>
+                    </div>
+
+                <div class="name">
+                    <ul>
+                        <li onclick="location.href='index.html';"><a href="#">Keona Ihli</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li onclick="location.href='about.html';"><a href="#">About Me</a></li>
+                        <li class="btn"onclick="location.href='Kub.html'"><a href="#">DE</a></li>
+                        <li class="btn1"><a href="#">/</a></li>
+                        <li class="btn2"><a href="#">EN</a></li>
+                    </ul>
+                </div>    
+            </header> 
+
+            
+            <div class="wrapper">
+
+                    <div class="p4">
+                        <img src="Projekt4.png" width="400" height="400">
+                    </div> 
+            </div>
+            
+            <div class="Headline">
+                3. Semester - Prototyping
+                <p>Project partner: Lisa Schulzke</p>
+            </div>
+           
+
+            <article class="infotext" >
+                <h3> A smart CO2 - warning system</h3> 
+                <p></p>
+                In our seminary week on the Hfg, we had permanent the window open because of Covid. 
+                So the question that arises to us - " When is enough fresh air in the Room, before we can close the window?"
+                We come up with the idea to measure this information. Especially in schools is it helpful, because 
+                there was constantly the window open in the wintertime.
+                <br></br>
+                <br></br>
+                <h3> Ideate </h3>
+                <p></p>
+                At first we did research on the act of Co2-particles & viruses in a room.
+                We procure the proper sensors, so we can quantify the Data. In the following step we take a closer look
+                on several user groups therfor we us methods like Stakeholdermap, user scenarios and interviews.
+                With all the collected information we define our use case.
+                <p></p>
+                <sub>"For an optimal working space teachers and students need the best circumambient air, to unfold they maximum potential.
+                      Here helps KUB with an ideal air conditions by warning for bad air and contagiousness."   
+                </sub>
+                <p></p>
+                Implement first ideas in to sketches - see picture on the left.
+                <br></br>
+                <br></br>
+                <h3> Prototyping</h3>
+                <p></p>
+                Our Prototyp is a working Product, which we implemented with code. 
+                The Co2-sensor, temperature & humidity sensor are connected with the LoRaWAN-ESP.
+                The LoRaWAN send the measurements to an Gateway, the data end up on the TTN (The Things Network) platform.
+                Via the TTN-platform the measured data goes over to the MQTT (Message Queuing Telemetry Transport) and from there it transmitted to the Node backend.
+                The Node backend on the other hand is with our databank connected, who we created in Firebase. 
+                In the frontend we use Flutter as framework for our Mobile App. So when the user open the App and scan the QR-Code which is in the room.
+                The App shows the live data, where it get from the databank.
+                <p></p>
+                <p>The Full-Stack:</p>
+                <img src="k-bild5.jpg" width="600" height="400"/>
+                <p></p>
+                We want the LoRaWAN, because it should work independently without the Wifi.
+                The measuring station came out the 3D-printer, in the inside the station are the sensors, rgb-leds & the LoRaWAN-ESP.
+                <p></p>
+                <img src="k-bild6.jpg" width="300" height="200" style="margin-left: 300px;"/>
+                <p></p>
+               
+                The outworking App:
+                <div class="b2"> <p></p>
+                    <img src="k-bild7.jpg" width="450" height="550"/>
+                </div>
+
+            </article>
+            
+
+            <div class="b1">
+                <img src="k-bild1.png" width="350" height="450"/>
+                <p></p> 
+                <img src="k-bild2.png" width="350" height="350"/>
+            </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
+            <div class="end">
+                <h2>End result</h2>
+            <br></br>
+            <p></p>
+            <p></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ldlQ_mFovP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315"  src="https://www.youtube.com/embed/tojQGIP7_bM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+          
+
+
+    </body>
+    <script src="javaScript.js"></script>
+</html>
